@@ -8,14 +8,14 @@ grunt.initConfig({
           config:'config/config.rb',               // Target options
         }
       }
-    },
+    },/*
     htmlmin: {                            // task-name
       htmlmin: {
           files: {
                "index.min.html": ["index.html"]     //生成されるファイル　: ファイルのソース
         }
       }
-    },
+    },*/
     cssmin: {                            // task-name
       cssmin: {
           files: {
@@ -43,7 +43,6 @@ grunt.initConfig({
 });
 
 
-
 //plugin
 
 grunt.loadNpmTasks('grunt-contrib-compass');
@@ -56,7 +55,7 @@ grunt.loadNpmTasks('grunt-browser-sync');
 
 //task
 
-grunt.registerTask('default', ['compass','htmlmin','cssmin','browserSync','watch']);
+grunt.registerTask('default', ['compass','cssmin','browserSync','watch']);
 };
 
 
