@@ -8,35 +8,21 @@ grunt.initConfig({
           config:'config/config.rb',               // Target options
         }
       }
-    },/*
+    },
     htmlmin: {                            // task-name
       htmlmin: {
           files: {
-               "build/index.min.html": ["index.html"]     //生成されるファイル　: ファイルのソース
+               "index.min.html": ["index.html"]     //生成されるファイル　: ファイルのソース
         }
       }
     },
     cssmin: {                            // task-name
       cssmin: {
           files: {
-               "build/style.min.css": ["build/style.css"]     //生成されるファイル　: ファイルのソース
+               "tylesheets/sp/style.min.css": ["stylesheets/sp/*.css"]     //生成されるファイル　: ファイルのソース
         }
       }
     },
-    uglify: {
-      uglify:{                    
-          files: {
-             "build/test.min.js": ["js/test.js"]
-        }
-      }
-    },
-    imagemin: {
-      imagemin: {
-        files: {
-           "image-min/*.png": ["image/*.png"]
-        }
-      }
-    },*/
     browserSync: {
       dev: {
         bsFiles: {
@@ -70,9 +56,7 @@ grunt.loadNpmTasks('grunt-browser-sync');
 
 //task
 
-//to do タスクの切り分け（毎回minifyする必要性がないから）　→　コメントアウトで対応？？
-
-grunt.registerTask('default', ['compass','browserSync','watch']);
+grunt.registerTask('default', ['compass','htmlmin','cssmin','browserSync','watch']);
 };
 
 
