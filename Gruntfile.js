@@ -19,7 +19,7 @@ grunt.initConfig({
     cssmin: {                            // task-name
       cssmin: {
           files: {
-               "tylesheets/sp/style.min.css": ["stylesheets/sp/*.css"]     //生成されるファイル　: ファイルのソース
+               "stylesheets/sp/style.min.css": ["stylesheets/sp/*.css"]     //生成されるファイル　: ファイルのソース
         }
       }
     },
