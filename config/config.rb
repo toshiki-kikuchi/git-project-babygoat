@@ -1,6 +1,6 @@
 http_path = "/"
-css_dir = "stylesheets/sp"
-sass_dir = "sass/sp/style.scss"
+css_dir = "stylesheets/sp/"
+sass_dir = "sass/sp/"
 images_dir = "image/"
 http_images_path = "/image/"
 http_images_dir = "image/"

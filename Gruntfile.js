@@ -8,18 +8,11 @@ grunt.initConfig({
           config:'config/config.rb',               // Target options
         }
       }
-    },/*
-    htmlmin: {                            // task-name
-      htmlmin: {
-          files: {
-               "index.min.html": ["index.html"]     //生成されるファイル　: ファイルのソース
-        }
-      }
-    },*/
+    },
     cssmin: {                            // task-name
       cssmin: {
           files: {
-               "stylesheets/sp/style.min.css": ["stylesheets/sp/*.css"]     //生成されるファイル　: ファイルのソース
+               "stylesheets/sp/style.min.css": ["stylesheets/sp/style.css"]     //生成されるファイル　: ファイルのソース
         }
       }
     },
